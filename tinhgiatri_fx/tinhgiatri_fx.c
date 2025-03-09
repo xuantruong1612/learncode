@@ -7,7 +7,7 @@
 
 // khai báo hàm double
 double f(double x) {
-    return x * sin(x * x - 1) - x * x * cos(x * x - x * x + 10) + x * tan(x + 1);
+    return x * x * sin(x * x - 1) - x * x * cos(x * x - x * x + 10) + x * tan(x * x + 1);
 }
 
 int main() {
