@@ -1,4 +1,4 @@
-## Các bài code của Trường ở đây nhé!!!
+# Các bài code của Trường ở đây nhé!!!
 
 # How to install:
 ```c
