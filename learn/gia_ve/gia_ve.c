@@ -51,7 +51,7 @@ int main() {
     printf("Nhap ngay xem (%d: Chu nhat, %d: Ngay thuong): ", CHU_NHAT, NGAY_THUONG);
     scanf("%d", &ngay_xem);
 
-    // nếu 1 thì chủ nhật gán chủ nhủ nhật, ...
+    // nếu 1 thì chủ nhật gán chủ nhật, ...
     if (ngay_xem == CHU_NHAT) {
         ngay_xem_str = STR_CHU_NHAT;
     } else {
