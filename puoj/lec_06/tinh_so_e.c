@@ -5,7 +5,7 @@
 
 int main () {
     int n = 0;
-    long long  giai_thua = 1;
+    long long giai_thua = 1;
     double epsilon;
     double e = 1;
 
