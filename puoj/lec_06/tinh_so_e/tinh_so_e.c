@@ -18,8 +18,8 @@ int main () {
         e = e + 1.0 / giai_thua;
     }
 
-    printf("GIa tri so e la %lf: \n", e );
-    printf("GIa tri so e thuc te %lf: ", exp(1) );
+    printf("Gia tri so e la %lf: \n", e);
+    printf("Gia tri so e thuc te %lf: ", exp(1));
 
     return 0;
 }

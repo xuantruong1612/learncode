@@ -7,7 +7,7 @@ long long  giaithua(int n){
         return 1;
     }
     else {
-        return giaithua (n -1) * n;
+        return giaithua (n - 1) * n;
     }
 }
 
