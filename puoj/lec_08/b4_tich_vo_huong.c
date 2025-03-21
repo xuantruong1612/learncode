@@ -1,27 +1,30 @@
 #include <stdio.h>
-#define ll long long
- 
-int main() {
-    ll n;
-    scanf("%lld", &n);
 
-    ll x[1000], y[1000], tich_vo_huong = 0;
+int tich_0_huong(int n, int x[], int y[]) {
+    int tich_vo_huong = 0;
 
-    // vector x
     for (int i = 0; i < n; i++) {
-        scanf("%lld", &x[i]);
+        scanf("%d", &x[i]);
     }
 
-    // vector y
     for (int i = 0; i < n; i++) {
-        scanf("%lld", &y[i]);
+        scanf("%d", &y[i]);
     }
-  
+
     for (int i = 0; i < n; i++) {
         tich_vo_huong += x[i] * y[i];
     }
 
-    printf("%lld\n", tich_vo_huong);
-    
+    printf("%d\n", tich_vo_huong);
+    return tich_vo_huong;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int x[1000], y[1000];
+    tich_0_huong(n, x, y);
+
     return 0;
 }
