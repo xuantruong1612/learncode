@@ -6,7 +6,7 @@ void input(int a[], int n) {
 }
 
 int nho_nhat(int a[], int n){
-    int mmin = a[0];
+    int min = a[0];
     for (int i = 0; i < n; i++){
         if (a[i] < min)
             min = a[i];
