@@ -5,7 +5,7 @@ void input(int a[], int n) {
         scanf("%d", &a[i]);
 }
 
-int lon_nhat(int a[], int n){
+int nho_nhat(int a[], int n){
     int max = a[0];
     for (int i = 0; i < n; i++){
         if (a[i] < max)
@@ -20,6 +20,6 @@ int main() {
     int a[n];
     input(a, n);
 
-    printf("%d", lon_nhat(a, n));
+    printf("%d", nho_nhat(a, n));
     return 0;
 }
