@@ -6,12 +6,12 @@ void input(int a[], int n) {
 }
 
 int nho_nhat(int a[], int n){
-    int max = a[0];
+    int mmin = a[0];
     for (int i = 0; i < n; i++){
-        if (a[i] < max)
-            max = a[i];
+        if (a[i] < min)
+            min = a[i];
     }
-    return max;
+    return min;
 }
 
 int main() {
