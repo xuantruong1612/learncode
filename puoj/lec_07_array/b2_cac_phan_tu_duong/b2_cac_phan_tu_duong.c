@@ -1,32 +1,34 @@
-// Các phần tử dương của mảng
-
 #include <stdio.h>
 
-int main() {
-    int n;
-    scanf("%d", &n);
-    int a[n];
+void input(int a[], int n) {
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
+}
 
-    int mang = 0;
+int duong(int a[], int n) {
+    int count = 0;
     for (int i = 0; i < n; i++) {
         if (a[i] > 0) {
-            mang++;
+            count++;
         }
     }
-
-    if (mang == 0) {
+    if (count == 0) {
         printf("Day so khong co phan tu duong");
     } else {
-        printf("%d\n", mang);
         for (int i = 0; i < n; i++) {
             if (a[i] > 0) {
                 printf("%d ", a[i]);
             }
         }
     }
+}
 
+int main() {
+    int n;
+    scanf("%d", &n);
+    int a[n];
+    input(a, n);
+    duong(a, n);
     return 0;
 }
