@@ -1,3 +1,6 @@
+/* Tìm số nguyên N lón nhất sao cho tổng
+ * S = xích ma i = 1 đến N 1 trên i */
+
 #include <stdio.h>
 
 int find_N(double M) {
@@ -7,7 +10,7 @@ int find_N(double M) {
         N++;
         S += 1.0 / N;
         if (S > M) {
-            return N - 1;
+            return N - 1; // vì N vượt quá giới hạn
         }
     }
 
