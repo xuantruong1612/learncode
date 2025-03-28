@@ -1,32 +1,24 @@
-// Các phần tử dương của mảng
-
 #include <stdio.h>
 
+int find_n(int M) {
+    double S = 0.0;
+    int N = 0;
+    while (S <= M) {
+        N++;
+        S += 1.0 / N;
+        if (S > M)
+            return N - 1;
+    }
+    return 0;
+}
+
 int main() {
-    int n;
-    scanf("%d", &n);
-    int a[n];
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
-
-    int mang = 0;
-    for (int i = 0; i < n; i++) {
-        if (a[i] > 0) {
-            mang++;
-        }
-    }
-
-    if (mang == 0) {
-        printf("Day so khong co phan tu duong");
-    } else {
-        printf("%d\n", mang);
-        for (int i = 0; i < n; i++) {
-            if (a[i] > 0) {
-                printf("%d ", a[i]);
-            }
-        }
-    }
-
+    double M;
+    scanf("%lf", &M);
+    int kq = find_n(M);
+    if (kq > 0)
+        printf("%d", kq);
+    else 
+        printf("NULL");
     return 0;
 }
