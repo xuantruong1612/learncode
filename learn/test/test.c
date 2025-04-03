@@ -1,10 +1,28 @@
 #include <stdio.h>
 
+#define ll long long
+
+void in(int a[], int n) {
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+}
+
+ll giaithua(ll x) {
+    if (x == 0 || x == 1)
+        return 1;
+    return x * giaithua(x - 1);
+}
+
 int main() {
     int n;
     scanf("%d", &n);
-    int nam = n / 365;
-    int du = n % 365;
-    int ngay = 30 % n;
-    printf("%d nam", ngay);
-    }
+    int a[n];
+    in(a, n);
+
+    //for (int i = 0; i < n; i++) {
+        printf("%lld\n", giaithua(a[i]));
+   // }
+    return 0;
+}
+
