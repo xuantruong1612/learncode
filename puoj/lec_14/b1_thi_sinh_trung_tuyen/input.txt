@@ -1,0 +1,10 @@
+9 23
+1438 7 Ho_Van_Nghia Bac_Giang
+1515 13 Luong_Hong_Phong Ha_Noi
+2415 27 Van_Hai_Yen Hung_Yen
+3685 10 Luu_Thu_Huong Thua_Thien_Hue
+3945 8 Nguyen_Hai_Yen Hoa_Binh
+5430 29 Lam_Thi_Thuy Ha_Noi
+5938 9 Le_Thi_Thuy Ha_Nam
+5957 17 Huynh_Thi_Thao Hoa_Binh
+9988 2 Hoang_Hong_Phong Ninh_Binh

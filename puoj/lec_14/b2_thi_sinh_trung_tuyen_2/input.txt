@@ -1,0 +1,9 @@
+8 24 Bac_Ninh
+1743 0 Trieu_Phuong_Vy Ha_Noi
+3550 8 Luong_Thi_Huong Hai_Phong
+4171 6 Lam_Phuong_Vy Nam_Dinh
+8031 25 Nghiem_Hai_Yen Bac_Giang
+8387 10 Do_Thuy_Diem Ha_Nam
+8507 19 Huynh_Thi_Thao Hung_Yen
+8985 2 Huynh_Van_Toan Bac_Ninh
+9991 0 Vuong_Thanh_Loan Thanh_Hoa
