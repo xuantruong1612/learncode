@@ -4,25 +4,27 @@
 */
 
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    unsigned long long n;
-    scanf("%llu", &n);
+    int n, sum = 1;  // 1 luôn là ước (trừ n = 1)
+    scanf("%d", &n);
 
-    if (n == 0) {
+    if (n <= 1) {
         printf("NO\n");
         return 0;
     }
 
-    unsigned long long sum = 1; // 1 luôn là ước của n > 1
-    for (unsigned long long i = 2; i * i <= n; ++i) {
+    int sqrt_n = sqrt(n);
+    for (int i = 2; i <= sqrt_n; i++) {
         if (n % i == 0) {
             sum += i;
-            if (i != n / i) sum += n / i;
+            if (i != n / i)
+                sum += n / i;
         }
     }
 
-    if (n != 1 && sum == n)
+    if (sum == n)
         printf("YES\n");
     else
         printf("NO\n");
