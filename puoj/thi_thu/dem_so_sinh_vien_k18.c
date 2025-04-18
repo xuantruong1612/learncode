@@ -26,3 +26,36 @@
 * ouput:
 * 0
 */
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    getchar();
+
+    int count = 0;
+
+    for (int i = 0; i < n; i++) {
+        char maSV[20];
+        char tenSV[100];
+        float gpa;
+
+        fgets(maSV, sizeof(maSV), stdin);
+        maSV[strcspn(maSV, "\n")] = '\0';
+
+        fgets(tenSV, sizeof(tenSV), stdin);
+        tenSV[strcspn(tenSV, "\n")] = '\0';
+
+        scanf("%f", &gpa);
+        getchar();
+
+        if (strncmp(maSV, "24", 2) == 0 && gpa >= 2.0 && gpa < 2.5) {
+            count++;
+        }
+    }
+
+    printf("%d\n", count);
+    return 0;
+}
