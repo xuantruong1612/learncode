@@ -1,14 +1,5 @@
 #include <stdio.h>
 
-int gcd(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
-
 int main() {
     int a, b;
     scanf("%d %d", &a, &b);
@@ -18,7 +9,14 @@ int main() {
         return 0;
     }
 
-    int GCD = gcd(a, b);
+    int x = a, y = b;
+    while (y != 0) {
+        int temp = y;
+        y = x % y;
+        x = temp;
+    }
+    int GCD = x;
+
     int LCM = (a * b) / GCD;
 
     printf("%d %d", GCD, LCM);

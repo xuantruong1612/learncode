@@ -5,6 +5,9 @@ int main() {
 
     do {
         scanf("%llu", &n);
+        if (n > 9999999999999999999LLU){
+            printf("nhap lai: \n");
+        }
     } while (n > 9999999999999999999LLU);
 
     if (n == 0) {
