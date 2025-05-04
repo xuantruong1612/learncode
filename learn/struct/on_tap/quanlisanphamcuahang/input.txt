@@ -1,0 +1,6 @@
+5  
+1001 Banh_Quy Thuc_Pham 120 15000  
+1003 Sua_Hop Do_Uong 85 20000  
+1002 Nuoc_Tuong Thuc_Pham 60 18000  
+1004 Bot_Giat Gia_Dung 90 25000  
+1005 My_Tom Thuc_Pham 200 6000  

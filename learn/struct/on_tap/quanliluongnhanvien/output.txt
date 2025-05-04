@@ -1,0 +1,5 @@
+1002 Pham_Van_Hung Giam_Doc 7200000 
+1003 Le_Thi_Hong_Hanh Nhan_Su 6000000 
+1001 Nguyen_Van_Nam Ke_Toan 5500000 
+1004 Tran_Thi_Thu_Ha Lap_Trinh 5280000 
+1005 Do_Hoai_Nam Bao_Ve 4680000 

@@ -1,0 +1,7 @@
+6  
+1001 Lap_Trinh_C_Co_Ban Nguyen_Van_An 2015 4  
+1003 Machine_Learning Trinh_Thi_Thu_Ha 2020 7  
+1002 Cau_Truc_Du_Lieu Pham_Van_Hung 2010 5  
+1004 Giai_Tich_1 Le_Thi_Hong_Hanh 2015 6  
+1005 Triet_Hoc_Marx_Lenin Do_Hoai_Nam 2021 3  
+1006 Khoa_Hoc_May_Tinh Tran_Van_Minh 2020 2  
