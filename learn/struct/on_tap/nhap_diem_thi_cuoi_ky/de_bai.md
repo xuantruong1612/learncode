@@ -1,1 +1,1 @@
-![Đề bài](images/1.png)
+![Đề bài](../images/1.png)
