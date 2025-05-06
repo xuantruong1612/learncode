@@ -1,0 +1,6 @@
+5  
+1001 Nguyen_Van_Hoa Noi_Tong_Hop 10 350000  
+1002 Le_Thi_Thu_Trang Nhi 7 450000  
+1003 Pham_Van_Nam Ngoai_Khoa 5 700000  
+1004 Tran_Thi_Hanh Tim_Mach 12 300000  
+1005 Do_Hoai_Bac Da_Lieu 15 200000  

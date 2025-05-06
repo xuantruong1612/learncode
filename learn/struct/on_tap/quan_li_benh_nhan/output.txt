@@ -1,0 +1,5 @@
+1004 Tran_Thi_Hanh Tim_Mach 3600000
+1003 Pham_Van_Nam Ngoai_Khoa 3500000
+1001 Nguyen_Van_Hoa Noi_Tong_Hop 3500000
+1002 Le_Thi_Thu_Trang Nhi 3150000
+1005 Do_Hoai_Bac Da_Lieu 3000000

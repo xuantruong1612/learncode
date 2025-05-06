@@ -1,0 +1,4 @@
+Khoa: Noi_Tong_Hop
+So benh nhan: 2
+1004 Tran_Thi_Hanh 12
+1001 Nguyen_Van_Hoa 10
