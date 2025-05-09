@@ -8,12 +8,11 @@ void nhap(char a[]) {
 
     while (check == 0) {
         printf("nhap chuoi: ");
-        fgets(a, 1000, stdin);
+        fgets(a, 100, stdin);
         a[strcspn(a, "\n")] = '\0';
-
+        kytu = chuso = 0;
         if (strlen(a) >= 10)
             kytu = 1;
-
         for (int i = 0; i < strlen(a); i++) {
             if (a[i] >= '0' && a[i] <= '9')
                 chuso = 1;
@@ -25,23 +24,21 @@ void nhap(char a[]) {
     }
 }
 
-void chuyendoi(char a[]) {
+void mahoa(char a[]) {
     for (int i = 0; i < strlen(a); i++) {
         if (a[i] >= '0' && a[i] <= '9') {
             a[i] = 'a' + (a[i] - '0');
         }
     }
-    printf("chuyen thanh ki tu: %s\n", a);
+    printf("sau khi ma hoa: %s\n", a);
 }
 
-void xenke(char a[]){
+void xenke(char a[]) {
+    mahoa(a);
     int index = 0;
-    for (int i = 0; i < strlen(a); i++){
-        if (a[i]>='A' && a[i] <='Z' || a[i] >='a' &&a[i]<='z'){
-            if (a[i]>='A' && a[i] <= 'Z'){
-                a[i] += 32;
-            }
-            if(index % 2 == 0) {
+    for (int i = 0; i < strlen(a); i++) {
+        if (a[i] >= 'a' && a[i] <= 'z' || a[i] >= 'A' && a[i] <= 'Z') {
+            if (index % 2 == 0) {
                 a[i] -= 32;
             }
             index++;
@@ -51,8 +48,7 @@ void xenke(char a[]){
 }
 
 int main() {
-    char a[1000];
+    char a[100];
     nhap(a);
-    chuyendoi(a);
     xenke(a);
 }
