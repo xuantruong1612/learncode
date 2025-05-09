@@ -9,16 +9,12 @@ typedef struct {
     double giaban;
 } sanpham;
 
+// 2.a
 void nhap(sanpham *sp, int n) {
     for (int i = 0; i < n; i++) {
         printf("nhap ten san pham thu %d: ", i + 1);
         fgets(sp[i].ten, sizeof(sp[i].ten), stdin);
         sp[i].ten[strcspn(sp[i].ten, "\n")] = '\0';
-        while (strlen(sp[i].ten) > 10) {
-            printf("sai roi, nhap lai: ");
-            fgets(sp[i].ten, sizeof(sp[i].ten), stdin);
-            sp[i].ten[strcspn(sp[i].ten, "\n")] = '\0';
-        }
 
         printf("nhap so luong: ");
         scanf("%d", &sp[i].soluong);
@@ -56,18 +52,20 @@ void nhap(sanpham *sp, int n) {
     }
 }
 
+// 2.b
 void in(sanpham *sp, int n) {
-    printf("--------------------------------------------------\n");
+    printf("-----+---------------+----------+-----+----------+\n");
     printf("%-5s|%-15s|%-10s|%-5s|%-20s\n", "STT", "TEN SAN PHAM", "SO LUONG",
            "SIZE", "GIA BAN");
-    printf("--------------------------------------------------\n");
+    printf("-----+---------------+----------+-----+----------+\n");
     for (int i = 0; i < n; i++) {
         printf("%-5d|%-15s|%-10d|%-5s|%-20.2lf\n", i + 1, sp[i].ten,
                sp[i].soluong, sp[i].size, sp[i].giaban);
-        printf("--------------------------------------------------\n");
+        printf("-----+---------------+----------+-----+----------+\n");
     }
 }
 
+// 2.c
 double sapxep(sanpham *sp, int n) {
     double tongsotien = 0;
     for (int i = 0; i < n; i++) {
@@ -85,6 +83,7 @@ double sapxep(sanpham *sp, int n) {
     return tongsotien;
 }
 
+// 2.d
 void loc(sanpham *sp, int n, double G1, double G2, char size[]) {
     int dem = 0;
     printf("--------------------------------------------------\n");
@@ -96,10 +95,12 @@ void loc(sanpham *sp, int n, double G1, double G2, char size[]) {
             strcmp(sp[i].size, size) == 0) {
             printf("%-5d|%-15s|%-10d|%-5s|%-20.2lf\n", i + 1, sp[i].ten,
                    sp[i].soluong, sp[i].size, sp[i].giaban);
-            printf("--------------------------------------------------\n"); dem++;
+            printf("--------------------------------------------------\n");
+            dem++;
         }
     }
-    if (dem == 0) printf("Khong co san pham thoa man");
+    if (dem == 0)
+        printf("Khong co san pham thoa man");
 }
 
 int main() {
@@ -110,14 +111,11 @@ int main() {
     sanpham sp[1000];
     nhap(sp, n);
     in(sp, n);
-    printf("\ntong so tien la: %.2lf", sapxep(sp, n));
+    printf("\ntong so tien la: %.2lf\n", sapxep(sp, n));
+
+    // 2.d
     double G1, G2;
     char size[4];
-    printf("\nnhap size va nhap gia:\n");
-    printf("nhap gia cua G1: ");
-    scanf("%lf", &G1);
-    printf("nhap gia cua G2: ");
-    scanf("%lf", &G2);
     int s;
     printf("moi nhap size:\n");
     do {
@@ -128,22 +126,29 @@ int main() {
             printf("khong co du lieu\n");
         }
     } while (s < 1 || s > 5);
+
+    // 2.e
+    printf("nhap gia cua G1: ");
+    scanf("%lf", &G1);
+    printf("nhap gia cua G2: ");
+    scanf("%lf", &G2);
+
     switch (s) {
-    case 1:
-        strcpy(size, "S");
-        break;
-    case 2:
-        strcpy(size, "M");
-        break;
-    case 3:
-        strcpy(size, "L");
-        break;
-    case 4:
-        strcpy(size, "XL");
-        break;
-    case 5:
-        strcpy(size, "2XL");
-        break;
+        case 1:
+            strcpy(size, "S");
+            break;
+        case 2:
+            strcpy(size, "M");
+            break;
+        case 3:
+            strcpy(size, "L");
+            break;
+        case 4:
+            strcpy(size, "XL");
+            break;
+        case 5:
+            strcpy(size, "2XL");
+            break;
     }
     loc(sp, n, G1, G2, size);
     return 0;

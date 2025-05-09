@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+// 1.a
 void nhap(char a[]) {
     int kytu = 0;
     int chuhoa = 0;
@@ -19,8 +20,6 @@ void nhap(char a[]) {
                 chuhoa = 1;
             if (a[i] >= '0' && a[i] <= '9')
                 so = 1;
-        }
-        for (int i = 0; i < strlen(a); i++) {
             if (a[0] == 'P' || a[0] == 'p')
                 batdau = 1;
         }
@@ -31,6 +30,7 @@ void nhap(char a[]) {
     }
 }
 
+// 1.b
 void dem(char a[]) {
     int chu = 0;
     int so = 0;
@@ -44,6 +44,7 @@ void dem(char a[]) {
     printf("chu: %d\nso: %d\n", chu, so);
 }
 
+// 1.c
 void xoa(char a[]) {
     int n = 0;
     for (int i = 0; i < strlen(a); i++) {
@@ -57,10 +58,15 @@ void xoa(char a[]) {
     printf("sau khi xoa: %s", a);
 }
 
-int main() {
-    char a[1000];
+// 1.d
+void goi(char a[]) {
     nhap(a);
     dem(a);
     xoa(a);
+}
+
+int main() {
+    char a[1000];
+    goi(a);
     return 0;
 }
