@@ -88,7 +88,6 @@ void sapxep(bmi *b, int n) {
 }
 
 void bmi_min(bmi *b, int n) {
-    printf("%-5s|%-15s|%-10s|%-10s\n", "STT", "TEN", "NAM SINH", "BMI");
     int m;
     do {
         printf("nhap m < n: ");
@@ -97,6 +96,7 @@ void bmi_min(bmi *b, int n) {
             printf("sai, nhap lai\n");
     } while (m <= 0 || m > n);
     sapxep(b, n);
+    printf("%-5s|%-15s|%-10s|%-10s\n", "STT", "TEN", "NAM SINH", "BMI");
     for (int i = 0; i < m; i++) {
         double bmi = b[i].cannang / (b[i].chieucao * b[i].chieucao);
         printf("%-5d|%-15s|%-10d|%-10.1lf\n", i + 1, b[i].ten, b[i].nam, bmi);
